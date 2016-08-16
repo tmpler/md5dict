@@ -203,6 +203,10 @@ app.controller('MainCtrl', [
     return (msw << 16) | (lsw & 0xFFFF);
     }
     }
+    $scope.try = function(word){
+      $scope.hashtobreak = word.hash;
+      $scope.find();
+    }
     $scope.find = function(){
       if($scope.hashtobreak.length===32){
         for(i=0;i<$scope.dictionary.length;i++){

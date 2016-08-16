@@ -37,6 +37,7 @@
             <tr ng-repeat="word in random | orderBy:'word'">
               <td>{{word.word}}</td>
               <td>{{word.hash}}</td>
+              <td><a ng-click="try(word)" class="btn btn-success">Try this hash</a></td>
             </tr>
           </tbody>
         </table>
