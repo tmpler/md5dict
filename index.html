@@ -23,7 +23,7 @@
         <a class="btn btn-success btn-lg btn-block" ng-click="find()">Find</a>
         <h2 class="text-center bg-success" ng-show="wordfound">Found word: {{wordfound}}</h2>
         <h2 class="text-center bg-danger" ng-show="error">{{error}}</h2>
-        <table class="table">
+        <table ng-show="random" class="table">
           <thead>
             <tr>
               <th class="text-center" colspan="3">Random 10 Words</th>
@@ -31,6 +31,7 @@
             <tr>
               <th>Word</th>
               <th>Hash</th>
+              <th>Try</th>
             </tr>
           </thead>
           <tbody>
